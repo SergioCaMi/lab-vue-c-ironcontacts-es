@@ -1,16 +1,11 @@
-import {
-  createApp,
-  ref,
-  computed,
-} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { createApp, ref, computed } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 createApp({
   setup() {
     const allContacts = ref([
       {
         name: "Idris Elba",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/d9NkfCwczP0TjgrjpF94jF67SK8.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/d9NkfCwczP0TjgrjpF94jF67SK8.jpg",
         popularity: 11.622713,
         id: "11731993-0604-4bee-80d5-67ad845d0a38",
         wonOscar: false,
@@ -18,8 +13,7 @@ createApp({
       },
       {
         name: "Johnny Depp",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/kbWValANhZI8rbWZXximXuMN4UN.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/kbWValANhZI8rbWZXximXuMN4UN.jpg",
         popularity: 15.656534,
         id: "7dad00f7-3949-477d-a7e2-1467fd2cfc06",
         wonOscar: false,
@@ -27,8 +21,7 @@ createApp({
       },
       {
         name: "Monica Bellucci",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/qlT4904d8oi2NIs28RrgnIZDFZB.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/qlT4904d8oi2NIs28RrgnIZDFZB.jpg",
         popularity: 16.096436,
         id: "0ad5e441-3084-47a1-9e9b-b917539bba71",
         wonOscar: false,
@@ -36,8 +29,7 @@ createApp({
       },
       {
         name: "Gal Gadot",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/34kHAyBaBhq2kUrmhM15paEBuuI.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/34kHAyBaBhq2kUrmhM15paEBuuI.jpg",
         popularity: 10.049256,
         id: "b497e3c4-50bb-4ae2-912f-eb36802c5bc2",
         wonOscar: false,
@@ -45,8 +37,7 @@ createApp({
       },
       {
         name: "Ian McKellen",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/coWjgMEYJjk2OrNddlXCBm8EIr3.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/coWjgMEYJjk2OrNddlXCBm8EIr3.jpg",
         popularity: 10.070132,
         id: "0067ae32-97b6-4431-898e-eb1c10150abb",
         wonOscar: false,
@@ -54,8 +45,7 @@ createApp({
       },
       {
         name: "Matt Damon",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
         popularity: 9.500475,
         id: "fd998a8f-1c9f-4ad8-8a03-45f93b630aa1",
         wonOscar: true,
@@ -63,8 +53,7 @@ createApp({
       },
       {
         name: "David Harbour",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/chPekukMF5SNnW6b22NbYPqAStr.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/chPekukMF5SNnW6b22NbYPqAStr.jpg",
         popularity: 9.47013,
         id: "0df01b3e-9cb9-498a-91c2-25435fa3bfed",
         wonOscar: false,
@@ -72,8 +61,7 @@ createApp({
       },
       {
         name: "Ansel Elgort",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/uQYUfGvOZkB5x25Z19UeyLABHmr.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/uQYUfGvOZkB5x25Z19UeyLABHmr.jpg",
         popularity: 9.429994,
         id: "09178713-ca9d-4657-a570-51d6f6459f57",
         wonOscar: false,
@@ -81,8 +69,7 @@ createApp({
       },
       {
         name: "Maria Bello",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/tFkbad0JoWvYc6XYBITv6EfeLwR.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/tFkbad0JoWvYc6XYBITv6EfeLwR.jpg",
         popularity: 9.209649,
         id: "48094f0e-1d16-4825-aae6-4888c065c6d7",
         wonOscar: false,
@@ -90,8 +77,7 @@ createApp({
       },
       {
         name: "Ryan Reynolds",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/h1co81QaT2nJA41Sb7eZwmWl1L2.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/h1co81QaT2nJA41Sb7eZwmWl1L2.jpg",
         popularity: 9.457546,
         id: "56792412-8fda-4e10-b5ec-9cade83b167d",
         wonOscar: false,
@@ -99,8 +85,7 @@ createApp({
       },
       {
         name: "Lauren Cohan",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/ygzDi7DIY6fHHxAcxvS7Z5kMFHe.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/ygzDi7DIY6fHHxAcxvS7Z5kMFHe.jpg",
         popularity: 9.191322,
         id: "b6e09d8d-b58e-48fe-9e07-1460b1e1d22b",
         wonOscar: false,
@@ -108,8 +93,7 @@ createApp({
       },
       {
         name: "Dwayne Johnson",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/kuqFzlYMc2IrsOyPznMd1FroeGq.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/kuqFzlYMc2IrsOyPznMd1FroeGq.jpg",
         popularity: 9.236478,
         id: "32ec545d-4939-403a-acd7-dd4bca6e94dd",
         wonOscar: false,
@@ -117,8 +101,7 @@ createApp({
       },
       {
         name: "Ben Affleck",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/cPuPt6mYJ83DjvO3hbjNGug6Fbi.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/cPuPt6mYJ83DjvO3hbjNGug6Fbi.jpg",
         popularity: 9.157077,
         id: "1599707e-5f49-4529-b920-db3831419b04",
         wonOscar: true,
@@ -126,8 +109,7 @@ createApp({
       },
       {
         name: "James McAvoy",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/oPIfGm3mf4lbmO5pWwMvfTt5BM1.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/oPIfGm3mf4lbmO5pWwMvfTt5BM1.jpg",
         popularity: 9.098376,
         id: "fef2ac16-36df-486d-8d69-41f1bafa8101",
         wonOscar: false,
@@ -135,8 +117,7 @@ createApp({
       },
       {
         name: "Robin Wright",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/cke0NNZP4lHRtOethRy2XGSOp3E.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/cke0NNZP4lHRtOethRy2XGSOp3E.jpg",
         popularity: 8.802542,
         id: "5133d421-dc81-4e3a-81fa-57816da7ce60",
         wonOscar: false,
@@ -144,8 +125,7 @@ createApp({
       },
       {
         name: "Hugh Jackman",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/oOqun0BhA1rLXOi7Q1WdvXAkmW.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/oOqun0BhA1rLXOi7Q1WdvXAkmW.jpg",
         popularity: 8.58347,
         id: "1144413a-4d60-45e4-a51e-ec9ad321d835",
         wonOscar: false,
@@ -153,8 +133,7 @@ createApp({
       },
       {
         name: "Sam Page",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/hCe4MEgugU33IdvDtDkJ6E5siqx.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/hCe4MEgugU33IdvDtDkJ6E5siqx.jpg",
         popularity: 8.42623,
         id: "711c69fe-4f64-453d-853a-05f40d004302",
         wonOscar: false,
@@ -162,8 +141,7 @@ createApp({
       },
       {
         name: "Robert Pattinson",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/wNcm8RiMYlWvneAkqQepkqI6r7L.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/wNcm8RiMYlWvneAkqQepkqI6r7L.jpg",
         popularity: 8.428432,
         id: "da6a1201-e933-47dd-87aa-997ce69ff273",
         wonOscar: false,
@@ -171,8 +149,7 @@ createApp({
       },
       {
         name: "Henry Cavill",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/h8bn6ybR5Hu58UGJGwb66nrOagV.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/h8bn6ybR5Hu58UGJGwb66nrOagV.jpg",
         popularity: 34.132372,
         id: "13872be0-b664-4e7b-a774-acdf0d713860",
         wonOscar: false,
@@ -180,8 +157,7 @@ createApp({
       },
       {
         name: "Chris Hemsworth",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/tlkDiLn2G75Xr7m1ybK8QFzZBso.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/tlkDiLn2G75Xr7m1ybK8QFzZBso.jpg",
         popularity: 56.23257,
         id: "39c8bc64-6b0b-4473-8781-a9ea1c1f51d9",
         wonOscar: false,
@@ -190,8 +166,7 @@ createApp({
 
       {
         name: "Jennifer Lawrence",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/q0tf3XEo7wa8XglIznTC7WzZ9W3.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/q0tf3XEo7wa8XglIznTC7WzZ9W3.jpg",
         popularity: 19.560912,
         id: "2abbdb9b-6034-452c-871f-2913fd42fbd0",
         wonOscar: true,
@@ -199,8 +174,7 @@ createApp({
       },
       {
         name: "Arnold Schwarzenegger",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/sOkCXc9xuSr6v7mdAq9LwEBje68.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/sOkCXc9xuSr6v7mdAq9LwEBje68.jpg",
         popularity: 18.216362,
         id: "4fe4d8ef-0fac-4bd9-8c02-ed89b668b2a9",
         wonOscar: false,
@@ -208,8 +182,7 @@ createApp({
       },
       {
         name: "Ana de Armas",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/nwS5UfMT0XUA6JEPwmt0jbNDa7B.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/nwS5UfMT0XUA6JEPwmt0jbNDa7B.jpg",
         popularity: 11.039487,
         id: "c5fcd5c6-bb11-433d-8c19-6bbd90653966",
         wonOscar: false,
@@ -217,8 +190,7 @@ createApp({
       },
       {
         name: "Chris Evans",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/8CgFKCZJVwZxa1F88n8drEux0vT.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/8CgFKCZJVwZxa1F88n8drEux0vT.jpg",
         popularity: 10.536705,
         id: "95eef6fa-fd7c-49f6-b799-40c045918dba",
         wonOscar: false,
@@ -226,8 +198,7 @@ createApp({
       },
       {
         name: "Robert Downey Jr.",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/1YjdSym1jTG7xjHSI0yGGWEsw5i.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/1YjdSym1jTG7xjHSI0yGGWEsw5i.jpg",
         popularity: 11.182626,
         id: "596ecfa1-7bb1-4704-87d5-c766745c2b1a",
         wonOscar: false,
@@ -235,8 +206,7 @@ createApp({
       },
       {
         name: "Tom Hardy",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/4W8v3fX0viPRmwRtS0SfLJW8fkd.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/4W8v3fX0viPRmwRtS0SfLJW8fkd.jpg",
         popularity: 10.572327,
         id: "9a28a4f5-00ab-45b3-9717-4bdbaa29b03e",
         wonOscar: false,
@@ -244,8 +214,7 @@ createApp({
       },
       {
         name: "Mark Ruffalo",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/zdM6RgCR5LpZwnL8UA3m7CfVpiq.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/zdM6RgCR5LpZwnL8UA3m7CfVpiq.jpg",
         popularity: 10.378788,
         id: "11a91271-8bd6-4f9b-bc05-6dded961c311",
         wonOscar: false,
@@ -253,8 +222,7 @@ createApp({
       },
       {
         name: "Steve Carell",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/fF9txPQCmHJSTYypJfA3ZzTH9Zr.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/fF9txPQCmHJSTYypJfA3ZzTH9Zr.jpg",
         popularity: 10.227521,
         id: "e31bc0bb-85f5-4fd5-8b6f-466e08be8041",
         wonOscar: false,
@@ -262,8 +230,7 @@ createApp({
       },
       {
         name: "Shu Qi",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/kmTErFq6lKQww2Yk9AfpR2Q5YWx.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/kmTErFq6lKQww2Yk9AfpR2Q5YWx.jpg",
         popularity: 10.445066,
         id: "0f65363c-a9ec-4e3a-a4af-f337940b3390",
         wonOscar: false,
@@ -271,8 +238,7 @@ createApp({
       },
       {
         name: "Olga Kurylenko",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/v9HmONHtTZM4Sl9QSNpxDYvuMCk.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/v9HmONHtTZM4Sl9QSNpxDYvuMCk.jpg",
         popularity: 10.286325,
         id: "65b3bc07-8761-4bc8-9952-18e1c91f57b6",
         wonOscar: false,
@@ -280,8 +246,7 @@ createApp({
       },
       {
         name: "Anthony Hopkins",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/jdoBTIru71FbPuHGEgox5RVmIO0.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/jdoBTIru71FbPuHGEgox5RVmIO0.jpg",
         popularity: 10.273801,
         id: "f197b07c-c0f6-4837-a4d6-f98f8673b0e6",
         wonOscar: true,
@@ -289,8 +254,7 @@ createApp({
       },
       {
         name: "John Goodman",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/eOIx8zj1vYIRhVY2bK5cjIQfua0.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/eOIx8zj1vYIRhVY2bK5cjIQfua0.jpg",
         popularity: 7.914248,
         id: "267cbff3-a043-41ac-8d99-489783d75316",
         wonOscar: false,
@@ -298,8 +262,7 @@ createApp({
       },
       {
         name: "Angelina Jolie",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/nsxtg9MQG01hvud1vVEW9vvfukK.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/nsxtg9MQG01hvud1vVEW9vvfukK.jpg",
         popularity: 7.875641,
         id: "2e7ad5d9-139b-4ae1-b9dd-f9ab9c4b0c2c",
         wonOscar: true,
@@ -307,8 +270,7 @@ createApp({
       },
       {
         name: "Kaya Scodelario",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/iTrPnn7oS96k0iWPzNxaKCNutB6.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/iTrPnn7oS96k0iWPzNxaKCNutB6.jpg",
         popularity: 7.82401,
         id: "8651449a-b52d-440f-b0fd-1662aa51fee2",
         wonOscar: false,
@@ -316,8 +278,7 @@ createApp({
       },
       {
         name: "Katee Sackhoff",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/lVtYSDuIxSaAsd2jW0qKvDTltVi.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/lVtYSDuIxSaAsd2jW0qKvDTltVi.jpg",
         popularity: 7.725615,
         id: "49edbe65-e496-406f-ab63-f7e064cddafd",
         wonOscar: false,
@@ -325,8 +286,7 @@ createApp({
       },
       {
         name: "Daniel Gillies",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/zasTOfb8TNyVGwRfb4jNdHnsZ2m.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/zasTOfb8TNyVGwRfb4jNdHnsZ2m.jpg",
         popularity: 7.859381,
         id: "39f0d572-ce12-4e9d-93d1-941d20bd19b5",
         wonOscar: false,
@@ -334,8 +294,7 @@ createApp({
       },
       {
         name: "Elijah Wood",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/hHzLAVspGGuPg1KW5JAEsyRvnUT.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/hHzLAVspGGuPg1KW5JAEsyRvnUT.jpg",
         popularity: 7.7395,
         id: "58251c1b-ffde-4f34-989a-f5bd701bb622",
         wonOscar: false,
@@ -343,8 +302,7 @@ createApp({
       },
       {
         name: "Colin Firth",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/lKUq407IhFF6CQoJbUgbEyfS9JA.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/lKUq407IhFF6CQoJbUgbEyfS9JA.jpg",
         popularity: 7.994861,
         id: "f68ecb76-ac22-4fe6-8019-8a882871e2dc",
         wonOscar: true,
@@ -352,8 +310,7 @@ createApp({
       },
       {
         name: "Michael Keaton",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/baeHNv3qrVsnApuKbZXiJOhqMnw.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/baeHNv3qrVsnApuKbZXiJOhqMnw.jpg",
         popularity: 8.011631,
         id: "4782c276-64ca-4e04-85d7-146a6592a380",
         wonOscar: false,
@@ -361,8 +318,7 @@ createApp({
       },
       {
         name: "Garth Jennings",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/zl6ZWijGySSIYJRFalleAiGkxyQ.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/zl6ZWijGySSIYJRFalleAiGkxyQ.jpg",
         popularity: 7.450652,
         id: "3325d5ec-14a3-480e-af73-4799ebee6560",
         wonOscar: false,
@@ -370,8 +326,7 @@ createApp({
       },
       {
         name: "Elle Fanning",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/cbFVl9NWREa0xD2vW9Z3J4ursiu.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/cbFVl9NWREa0xD2vW9Z3J4ursiu.jpg",
         popularity: 7.474528,
         id: "8b4be348-1f0b-4774-8dbc-6bb2f29c8eb8",
         wonOscar: false,
@@ -379,8 +334,7 @@ createApp({
       },
       {
         name: "Miki Takakura",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/2bXHWy82SzgMCFIuxVRKvDtw8Q6.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/2bXHWy82SzgMCFIuxVRKvDtw8Q6.jpg",
         popularity: 7.563937,
         id: "840b7564-4e17-4ecd-bd65-ffbe846e73cb",
         wonOscar: false,
@@ -388,8 +342,7 @@ createApp({
       },
       {
         name: "Jake Gyllenhaal",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/1dHiMQsqiIAF9zhGvB0oJOIaM16.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/1dHiMQsqiIAF9zhGvB0oJOIaM16.jpg",
         popularity: 7.177807,
         id: "101290ab-9157-4596-9c10-7a39f7ff839f",
         wonOscar: false,
@@ -397,8 +350,7 @@ createApp({
       },
       {
         name: "Brendan Fraser",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/n8VOWXp94nhIEo5nS9o6bOpUHiN.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/n8VOWXp94nhIEo5nS9o6bOpUHiN.jpg",
         popularity: 7.188894,
         id: "d26718a1-bb3f-4eba-8d60-0a6a92c2787a",
         wonOscar: false,
@@ -406,8 +358,7 @@ createApp({
       },
       {
         name: "Tessa Thompson",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
         popularity: 7.090946,
         id: "c343b2a6-0c87-4a1c-9cf0-14ff1593996b",
         wonOscar: false,
@@ -415,8 +366,7 @@ createApp({
       },
       {
         name: "Lee Chae-dam",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/lJ2ryu3XGVyP7WESkL3pTigeg8j.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/lJ2ryu3XGVyP7WESkL3pTigeg8j.jpg",
         popularity: 14.042809,
         id: "246db57e-0601-4f0d-b017-967e92808151",
         wonOscar: false,
@@ -424,8 +374,7 @@ createApp({
       },
       {
         name: "Tom Hanks",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/pQFoyx7rp09CJTAb932F2g8Nlho.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/pQFoyx7rp09CJTAb932F2g8Nlho.jpg",
         popularity: 13.978997,
         id: "2a905e89-f82e-40f2-bf91-5b9834984172",
         wonOscar: true,
@@ -433,8 +382,7 @@ createApp({
       },
       {
         name: "Cara Delevingne",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/lEIFRIR8EohwOVe7PQu4zvIl850.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/lEIFRIR8EohwOVe7PQu4zvIl850.jpg",
         popularity: 13.272943,
         id: "f119366b-0f64-4e83-8666-2be40f2795cd",
         wonOscar: false,
@@ -442,8 +390,7 @@ createApp({
       },
       {
         name: "Rose Byrne",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/laJdQNmsuR2iblYUggEqr49LvwJ.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/laJdQNmsuR2iblYUggEqr49LvwJ.jpg",
         popularity: 13.094365,
         id: "81ab13e0-89c7-468d-acf9-5ab8c17f2d66",
         wonOscar: false,
@@ -451,8 +398,7 @@ createApp({
       },
       {
         name: "Keanu Reeves",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/1wpzvf5PaQ1AZjl5rPNjWQobLLP.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/1wpzvf5PaQ1AZjl5rPNjWQobLLP.jpg",
         popularity: 12.267253,
         id: "7cdd5950-55e0-4d9e-8959-2181ed5f12e6",
         wonOscar: false,
@@ -460,8 +406,7 @@ createApp({
       },
       {
         name: "Ron Howard",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/qdtdnNLSsaXZmpwOqXuQB3xU2uL.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/qdtdnNLSsaXZmpwOqXuQB3xU2uL.jpg",
         popularity: 6.984089,
         id: "6099d30b-2781-4b32-85af-5339a13a97b3",
         wonOscar: true,
@@ -469,8 +414,7 @@ createApp({
       },
       {
         name: "Orlando Bloom",
-        pictureUrl:
-          "https://image.tmdb.org/t/p/w500/6JmscW0HXS10420mzdgjKXfWdkX.jpg",
+        pictureUrl: "https://image.tmdb.org/t/p/w500/6JmscW0HXS10420mzdgjKXfWdkX.jpg",
         popularity: 6.955899,
         id: "819749fd-d416-45fc-9209-a3f98de297ee",
         wonOscar: false,
@@ -478,6 +422,56 @@ createApp({
       },
     ]);
 
-    return { allContacts };
+    const name = ref("");
+    const popularity = ref("");
+    const oscar = ref(false);
+    const emmy = ref(false);
+    const deleteContact = (contact) => {
+      console.log(contact);
+      allContacts.value = allContacts.value.filter((c) => c.id != contact.id);
+    };
+    const filterContact = computed(() => {
+      let filterC = allContacts.value;
+
+      if (name.value) {
+        filterC = filterC.filter((c) => c.name.toLowerCase().includes(name.value.toLowerCase()));
+      }
+
+      if (popularity.value) {
+        filterC = filterC.filter((c) => c.popularity >= +popularity.value);
+      }
+
+      if (oscar.value) {
+        filterC = filterC.filter((c) => c.wonOscar);
+      }
+
+      if (emmy.value) {
+        filterC = filterC.filter((c) => c.wonEmmy);
+      }
+
+      if (sortByPopularity.value) {
+        filterC.sort((a, b) => b.popularity - a.popularity);
+      }
+      if (sortByName.value) {
+        filterC.sort((a, b) => a.name.localeCompare(b.name));
+      }
+      console.log("coincidencias:", filterC.length, "ordenado por nombre?", sortByName.value, "ordenado por popularidad?", sortByPopularity.value);
+
+      return filterC;
+    });
+
+    const sortByPopularity = ref(false);
+    const sortByName = ref(false);
+    return {
+      allContacts,
+      name,
+      filterContact,
+      popularity,
+      oscar,
+      emmy,
+      deleteContact,
+      sortByPopularity,
+      sortByName,
+    };
   },
 }).mount("#app");

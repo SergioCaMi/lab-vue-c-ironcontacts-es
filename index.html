@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irom Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
+      integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Irom Contacts</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
-    integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div id="app">
-
-  </div>
-  <script type="module" src="app.js"></script>
-</body>
-
+  <body>
+    <div id="app">
+      <div class="container">
+        <button @click="sortByPopularity = !sortByPopularity">Ordenar por popularidad</button>
+        <button @click="sortByName = !sortByName">Ordenar por nombre</button>
+        <form @submit.prevent>
+          <div>
+            <label for="nombre-completo">Filtrar por nombre o apellido:</label>
+            <input type="text" id="nombre-completo" name="nombre-completo" v-model="name" />
+          </div>
+          <div>
+            <label for="popularidad">Popularidad mínima:</label>
+            <input type="number" id="popularidad" name="popularidad" min="0" max="10" v-model="popularity" />
+          </div>
+          <div>
+            <p>Premios ganados:</p>
+            <input type="checkbox" id="emmy" name="premios" value="emmy" v-model="oscar" />
+            <label for="emmy">Ganador de un Oscar</label>
+            <br />
+            <input type="checkbox" id="grammy" name="premios" value="grammy" v-model="emmy" />
+            <label for="grammy">Ganador de un Emmy</label>
+          </div>
+          <div>
+            <button type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <table border="2">
+          <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Popularity</th>
+            <th>Won Oscar</th>
+            <th>Won Emmy</th>
+            <th>Delete</th>
+          </tr>
+          <tr v-for="contact in filterContact" :key="contact.id">
+            <td><img :src="contact.pictureUrl" :alt="contact.name" style="width: 200px" /></td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.popularity}}</td>
+            <td v-if="contact.wonOscar">🏆</td>
+            <td v-else></td>
+            <td v-if="contact.wonEmmy">🏆</td>
+            <td v-else></td>
+            <td><button id="btnDelete" @click="deleteContact(contact)">Delete Contact</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
