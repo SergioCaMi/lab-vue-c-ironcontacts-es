@@ -426,12 +426,13 @@ createApp({
     const popularity = ref("");
     const oscar = ref(false);
     const emmy = ref(false);
+    let filterC = allContacts.value;
+
     const deleteContact = (contact) => {
       console.log(contact);
       allContacts.value = allContacts.value.filter((c) => c.id != contact.id);
     };
     const filterContact = computed(() => {
-      let filterC = allContacts.value;
 
       if (name.value) {
         filterC = filterC.filter((c) => c.name.toLowerCase().includes(name.value.toLowerCase()));
@@ -449,19 +450,28 @@ createApp({
         filterC = filterC.filter((c) => c.wonEmmy);
       }
 
-      if (sortByPopularity.value) {
-        filterC.sort((a, b) => b.popularity - a.popularity);
-      }
-      if (sortByName.value) {
-        filterC.sort((a, b) => a.name.localeCompare(b.name));
-      }
-      console.log("coincidencias:", filterC.length, "ordenado por nombre?", sortByName.value, "ordenado por popularidad?", sortByPopularity.value);
-
       return filterC;
     });
 
-    const sortByPopularity = ref(false);
     const sortByName = ref(false);
+    const fSortByName = () => {
+      sortByName.value = !sortByName.value;
+      if (sortByName.value) {
+        return filterC.sort((a, b) => a.name.localeCompare(b.name));
+      } else {
+        return filterC.sort((a, b) => b.name.localeCompare(a.name));
+      }
+    };
+
+    const sortByPopularity = ref(false);
+    const fSortByPopularity = () => {
+      sortByPopularity.value = !sortByPopularity.value;
+      if (sortByPopularity.value) {
+        return filterC.sort((a, b) => b.popularity - a.popularity);
+      } else {
+        return filterC.sort((a, b) => a.popularity - b.popularity);
+      }
+    };
     return {
       allContacts,
       name,
@@ -472,6 +482,8 @@ createApp({
       deleteContact,
       sortByPopularity,
       sortByName,
+      fSortByName,
+      fSortByPopularity
     };
   },
 }).mount("#app");

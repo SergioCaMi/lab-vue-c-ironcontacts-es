@@ -17,8 +17,8 @@
   <body>
     <div id="app">
       <div class="container">
-        <button @click="sortByPopularity = !sortByPopularity">Ordenar por popularidad</button>
-        <button @click="sortByName = !sortByName">Ordenar por nombre</button>
+        <button @click="fSortByPopularity">Ordenar por popularidad</button>
+        <button @click="fSortByName">Ordenar por nombre</button>
         <form @submit.prevent>
           <div>
             <label for="nombre-completo">Filtrar por nombre o apellido:</label>
